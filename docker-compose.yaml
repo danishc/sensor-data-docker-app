@@ -1,0 +1,33 @@
+version: "3.9"
+
+services:
+
+  machop1:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "8001:8080"
+    environment:
+      - TEMP_SENSOR_ID=1001
+      - OXG_SENSOR_ID=2001
+
+  machop2:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "8002:8080"
+    environment:
+      - TEMP_SENSOR_ID=1002
+      - OXG_SENSOR_ID=2002
+
+  machop3:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "8003:8080"
+    environment:
+      - TEMP_SENSOR_ID=1003
+      - OXG_SENSOR_ID=2003
