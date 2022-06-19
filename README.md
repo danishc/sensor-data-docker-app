@@ -1,16 +1,14 @@
 ### How to run app using maven
 
-    ```
-    $ mvn insatll cargo:run
-    ```
+    mvn insatll cargo:run
+    
 
-### How to deploy the app using docker compose
+### How to deploy the app using docker-compose
 
 Run the following command from sensor-data repo
      
-     ```
-     $ docker-compose up
-     ```
+     docker-compose up
+     
 
 
 ### Design and implementation
@@ -26,4 +24,4 @@ Run the following command from sensor-data repo
 5. http:localhost:8002/sensor-data-server/api/sensor/oxygen
 6. http:localhost:8003/sensor-data-server/api/sensor/oxygen
 
-Note: It's possible to text endpoint from client app in the client model   
+Note: It's possible to test endpoint from client app in the client model   
